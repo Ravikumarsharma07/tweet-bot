@@ -61,7 +61,7 @@ async function main() {
   return completion.choices[0].message.content;
 }
 
-cron.schedule("0 40 13 * * *", async () => {
+cron.schedule("0 0 14 * * *", async () => {
   console.log("Posting tweet...");
   try {
     const tweet = await main();
